@@ -1,5 +1,5 @@
 ﻿"""
-main.py - QT-Player 一个Qt播放器 (Refactored v3.0 - Vinyl & Sprites)
+main.py - QTPlayer 一个Qt播放器
 依赖: PyQt6, mutagen
 作者：6666
 """
@@ -1188,7 +1188,7 @@ class MainPlayer(QMainWindow):
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         # Mobile-like default viewport (close to iPhone SE 375:667 ratio).
         self.resize(388, 690)
-        self.setWindowTitle("QTPlay v1.0")
+        self.setWindowTitle("QTplayer v1.0")
 
         # 初始化 UI
         self._init_ui()
@@ -1199,7 +1199,7 @@ class MainPlayer(QMainWindow):
         self._player.setAudioOutput(self._audio_output)
 
         self._playlist_root = PlatformCompat.get_storage_dir(
-            "TTPlayer", Path(__file__).resolve().parent
+            "QTplayer", Path(__file__).resolve().parent
         )
         try:
             self._playlist_root.mkdir(parents=True, exist_ok=True)
@@ -1469,8 +1469,8 @@ class MainPlayer(QMainWindow):
         self.btn_close.setFixedSize(28, 28)
         self.btn_close.clicked.connect(self.close)
         
-        # 标题文字 - TTplayer（主界面）或播放列表（播放列表界面）
-        self.lbl_title = QLabel("TTplayer")
+        # 标题文字 - QTplayer（主界面）或播放列表（播放列表界面）
+        self.lbl_title = QLabel("QTplayer")
         self.lbl_title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.lbl_title.setStyleSheet("font-size: 14px; font-weight: bold; color: #F8FAFC;")
         
@@ -1531,7 +1531,7 @@ class MainPlayer(QMainWindow):
         # 设置初始状态
         self.content_stack.setCurrentIndex(0)  # 主界面内容
         self.button_stack.setCurrentIndex(0)   # 主界面按钮
-        self.lbl_title.setText("TTplayer")     # 主界面标题
+        self.lbl_title.setText("QTplayer")     # 主界面标题
 
     def _init_main_content(self):
         """初始化主界面内容"""
@@ -1753,7 +1753,7 @@ class MainPlayer(QMainWindow):
         
         # 更新标题
         if new_index == 0:  # 主界面
-            self.lbl_title.setText("TTplayer")
+            self.lbl_title.setText("QTplayer")
             self._view_mode = 0
         else:  # 播放列表
             self.lbl_title.setText("播放列表")
@@ -2488,7 +2488,7 @@ class MainPlayer(QMainWindow):
         if mode == 0:  # 主界面
             self.content_stack.setCurrentIndex(0)
             self.button_stack.setCurrentIndex(0)
-            self.lbl_title.setText("TTplayer")
+            self.lbl_title.setText("QTplayer")
         elif mode == 1:  # 播放列表
             self.content_stack.setCurrentIndex(1)
             self.button_stack.setCurrentIndex(1)
