@@ -97,7 +97,7 @@ def get_resource_path(relative_path: str) -> str:
     在 PyInstaller 打包后（--onefile 模式），返回解压到临时目录的路径。
     
     Args:
-        relative_path: 相对路径，如 "Assets/digital_7/digital-7.ttf"
+        relative_path: 相对路径，如 "Assets/VT323/VT323-Regular.ttf"
     
     Returns:
         资源的绝对路径字符串
@@ -1260,10 +1260,7 @@ class MainPlayer(QMainWindow):
         font_source = None
         # 使用 get_resource_path 兼容开发环境和 PyInstaller 打包
         font_candidates = [
-            "Assets/digital_7/digital-7.ttf",
-            "Assets/digital_7/digital-7 (mono).ttf",
-            "Assets/digital_7/digital-7 (mono italic).ttf",
-            "Assets/digital_7/digital-7 (italic).ttf",
+            "Assets/VT323/VT323-Regular.ttf",
         ]
         for rel_path in font_candidates:
             fp = Path(get_resource_path(rel_path))
