@@ -62,26 +62,8 @@ QTPlayer/
 ├── utils.py
 └── Assets/                # 主题、字体、资源等
 ```
-├── playlist_manager.py
-├── playlist_state.json
-├── playlist.m3u
-├── requirements.txt
-├── README.md
-├── theme.json
-├── ui_helpers.py
-├── utils.py
-└── Assets/                # 主题、字体、资源等
-=======
-QT-Player/
-├── main.py              # 主程序
-├── requirements.txt     # 依赖列表
-├── README.md            # 说明文档
-├── 捕获.PNG             # 截图
-└── Assets/
-    └── VT323-Regular.ttf       # 点阵字体
 
->>>>>>> 7b4d6632182b19770885600e5d58b336fbd5f7ca
-```
+
 
 ## 开发与调试
 
