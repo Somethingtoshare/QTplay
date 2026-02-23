@@ -79,29 +79,17 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
-        pip install pyinstaller
+        pip install pyqt6 pyinstaller
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: Build .app with PyInstaller (macOS)
       run: |
-        # 不使用 --onefile，以生成 .app 应用包
-        pyinstaller --windowed --name "飞羽播放器" --add-data "Assets:Assets" --icon "Assets/app_icon.icns" mainrefector.py
+        # 使用 --windowed 生成 .app bundle，--noconfirm 覆盖旧构建
+        pyinstaller --windowed --noconfirm --name "飞羽播放器" --add-data "Assets:Assets" --icon "Assets/app_icon.icns" mainrefector.py
 
-    - name: Create .img from .app
-      run: |
-        set -e
-        APP_BUNDLE="dist/飞羽播放器.app"
-        IMG_PATH="dist/飞羽播放器.img"
-        if [ -d "$APP_BUNDLE" ]; then
-          hdiutil create -srcfolder "$APP_BUNDLE" -volname "飞羽播放器" -ov -format UDRW "$IMG_PATH"
-        else
-          echo "App bundle not found: $APP_BUNDLE"
-          exit 1
-        fi
-
-    - name: Upload artifact (.img)
+    - name: Upload Build Artifact
       uses: actions/upload-artifact@v4
       with:
         name: 飞羽播放器-macos
-        path: dist/飞羽播放器.img
+        path: dist/飞羽播放器.app
         retention-days: 30
