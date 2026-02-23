@@ -92,11 +92,8 @@ QT-Player/
 ├── README.md            # 说明文档
 ├── 捕获.PNG             # 截图
 └── Assets/
-    └── digital_7/       # 点阵字体
-        ├── digital-7.ttf
-        ├── digital-7 (mono).ttf
-        ├── digital-7 (italic).ttf
-        └── digital-7 (mono italic).ttf
+    └── VT323-Regular.ttf       # 点阵字体
+
 ```
 
 ## 🔧 技术特点
