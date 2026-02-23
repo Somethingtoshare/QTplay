@@ -1,0 +1,105 @@
+{
+    "自适应": {
+        "mode": "cover"
+    },
+    "深海": {
+        "window_grad": "qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #0F172A, stop:1 #1E293B)",
+        "panel_left": "#1E293B",
+        "text_p": "#F8FAFC",
+        "text_s": "#CBD5E1",
+        "accent": "#38BDF8",
+        "btn_hover": "rgba(56, 189, 248, 0.22)",
+        "border": "rgba(56, 189, 248, 0.35)",
+        "shadow": "#38BDF8"
+    },
+    "黑曜": {
+        "window_grad": "qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #000000, stop:1 #1A1A1A)",
+        "panel_left": "#1A1A1A",
+        "text_p": "#FFFFFF",
+        "text_s": "#E4E4E7",
+        "accent": "#E50914",
+        "btn_hover": "rgba(229, 9, 20, 0.22)",
+        "border": "rgba(229, 9, 20, 0.35)",
+        "shadow": "#E50914"
+    },
+    "翡翠": {
+        "window_grad": "qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #064E3B, stop:1 #065F46)",
+        "panel_left": "#065F46",
+        "text_p": "#ECFDF5",
+        "text_s": "#A7F3D0",
+        "accent": "#34D399",
+        "btn_hover": "rgba(52, 211, 153, 0.24)",
+        "border": "rgba(52, 211, 153, 0.35)",
+        "shadow": "#34D399"
+    },
+    "赛博": {
+        "window_grad": "qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #020617, stop:1 #1E1B4B)",
+        "panel_left": "#1E1B4B",
+        "text_p": "#FAE8FF",
+        "text_s": "#E9D5FF",
+        "accent": "#F472B6",
+        "btn_hover": "rgba(244, 114, 182, 0.24)",
+        "border": "rgba(244, 114, 182, 0.35)",
+        "shadow": "#F472B6"
+    },
+    "侘寂": {
+        "window_grad": "qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #27272A, stop:1 #3F3F46)",
+        "panel_left": "#3F3F46",
+        "text_p": "#F4F4F5",
+        "text_s": "#D4D4D8",
+        "accent": "#A1A1AA",
+        "btn_hover": "rgba(161, 161, 170, 0.24)",
+        "border": "rgba(161, 161, 170, 0.35)",
+        "shadow": "#A1A1AA"
+    },
+    "暗金": {
+        "window_grad": "qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #1C1917, stop:1 #292524)",
+        "panel_left": "#292524",
+        "text_p": "#FAFAF9",
+        "text_s": "#E7E5E4",
+        "accent": "#D97706",
+        "btn_hover": "rgba(217, 119, 6, 0.24)",
+        "border": "rgba(217, 119, 6, 0.35)",
+        "shadow": "#D97706"
+    },
+    "幽灵": {
+        "window_grad": "qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #09090B, stop:1 #18181B)",
+        "panel_left": "#18181B",
+        "text_p": "#E4E4E7",
+        "text_s": "#A1A1AA",
+        "accent": "#6366F1",
+        "btn_hover": "rgba(99, 102, 241, 0.24)",
+        "border": "rgba(99, 102, 241, 0.35)",
+        "shadow": "#6366F1"
+    },
+    "波尔多": {
+        "window_grad": "qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #450A0A, stop:1 #7F1D1D)",
+        "panel_left": "#7F1D1D",
+        "text_p": "#FEF2F2",
+        "text_s": "#FECACA",
+        "accent": "#F87171",
+        "btn_hover": "rgba(248, 113, 113, 0.24)",
+        "border": "rgba(248, 113, 113, 0.35)",
+        "shadow": "#F87171"
+    },
+    "极光": {
+        "window_grad": "qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #022C22, stop:1 #064E3B)",
+        "panel_left": "#064E3B",
+        "text_p": "#F0FDFA",
+        "text_s": "#CCFBF1",
+        "accent": "#A7F3D0",
+        "btn_hover": "rgba(167, 243, 208, 0.24)",
+        "border": "rgba(167, 243, 208, 0.35)",
+        "shadow": "#A7F3D0"
+    },
+    "宇宙": {
+        "window_grad": "qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #171717, stop:1 #262626)",
+        "panel_left": "#262626",
+        "text_p": "#F5F3FF",
+        "text_s": "#DDD6FE",
+        "accent": "#8B5CF6",
+        "btn_hover": "rgba(139, 92, 246, 0.24)",
+        "border": "rgba(139, 92, 246, 0.35)",
+        "shadow": "#8B5CF6"
+    }
+}

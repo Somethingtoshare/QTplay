@@ -1,0 +1,10 @@
+venv/
+*.txt
+*.log
+*.pyc
+*.md
+*.m3u
+playlist.m3u
+playlist_state.json
+!README.md
+!requirements.txt
