@@ -2,7 +2,7 @@
 
 一个基于 PyQt6 的现代化音乐播放器，包含主题系统、歌词显示、点阵频谱等自定义控件，适合用于学习、演示与二次开发。有Windows,Linux,Mac版本
 
-![截图](QTplayer.png)   
+![截图](QTplayer.PNG)   
 
 ## ✨ 功能特性          
 
@@ -39,29 +39,8 @@ pip install -r requirements.txt
 ### 3. 运行程序
 
 ```bash
-python main.py
+python mainrefector.py
 ```
-
-## 🎮 使用说明
-
-### 基本操作
-
-| 操作 | 说明 |
-|------|------|
-| 添加歌曲 | 点击文件夹图标添加音频文件 |
-| 播放/暂停 | 点击中间的播放按钮 |
-| 上一首/下一首 | 点击左右两侧的跳转按钮 |
-| 列表按钮 | 点击右下角列表按钮可切换到播放列表 |
-
-
-## 主要功能
-
-- 多格式音频支持（MP3 / M4A / WAV / FLAC 等）
-- 主题与配色（包含自适应主题，根据封面提取主色）
-- 黑胶唱片动画与点阵频谱可视化
-- 歌词显示（支持 .lrc 与内嵌歌词）
-- 播放列表管理与播放状态记忆
-
 ## 项目结构（简略）
 
 ```
@@ -82,6 +61,26 @@ QTPlayer/
 ├── ui_helpers.py
 ├── utils.py
 └── Assets/                # 主题、字体、资源等
+```
+├── playlist_manager.py
+├── playlist_state.json
+├── playlist.m3u
+├── requirements.txt
+├── README.md
+├── theme.json
+├── ui_helpers.py
+├── utils.py
+└── Assets/                # 主题、字体、资源等
+=======
+QT-Player/
+├── main.py              # 主程序
+├── requirements.txt     # 依赖列表
+├── README.md            # 说明文档
+├── 捕获.PNG             # 截图
+└── Assets/
+    └── VT323-Regular.ttf       # 点阵字体
+
+>>>>>>> 7b4d6632182b19770885600e5d58b336fbd5f7ca
 ```
 
 ## 开发与调试
