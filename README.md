@@ -53,8 +53,6 @@ QTPlayer/
 ├── component_widgets.py
 ├── mainrefector.py        # 当前项目的主入口（请根据需要调整）
 ├── playlist_manager.py
-├── playlist_state.json
-├── playlist.m3u
 ├── requirements.txt
 ├── README.md
 ├── theme.json
