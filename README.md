@@ -58,8 +58,7 @@ QTPlayer/
 ├── theme.json
 ├── ui_helpers.py
 ├── utils.py
-└── Assets/                # 主题、字体、资源等
->>>>>>>>> Temporary merge branch 2
+└── Assets/    # 主题、字体、资源等
 ```
 
 
