@@ -8,10 +8,10 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Optional, Tuple
 
-from PyQt6.QtGui import QFont, QFontDatabase, QIcon, QPainter, QPixmap
-from PyQt6.QtGui import QColor
-from PyQt6.QtWidgets import QPushButton, QStyle, QGraphicsDropShadowEffect, QWidget
-from PyQt6.QtCore import QSize, Qt
+from PySide6.QtGui import QFont, QFontDatabase, QIcon, QPainter, QPixmap
+from PySide6.QtGui import QColor
+from PySide6.QtWidgets import QPushButton, QStyle, QGraphicsDropShadowEffect, QWidget
+from PySide6.QtCore import QSize, Qt
 
 from utils import get_resource_path
 

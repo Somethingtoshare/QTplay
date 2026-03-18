@@ -4,7 +4,7 @@ theme_manager.py - 主题管理器
 
 import json
 from pathlib import Path
-from PyQt6.QtGui import QColor
+from PySide6.QtGui import QColor
 
 
 class ThemeManager:
@@ -383,4 +383,3 @@ class ThemeManager:
             QMenu {{ background: {t["bg"]}; border: 1px solid {t["border"]}; color: {t["text"]}; }}
             QMenu::item:selected {{ background: {t["accent"]}; color: {t["hover_text"]}; }}
         """
-

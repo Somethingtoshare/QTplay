@@ -8,8 +8,8 @@ from __future__ import annotations
 from typing import Any
 import os
 
-from PyQt6.QtCore import QUrl
-from PyQt6.QtGui import QPixmap
+from PySide6.QtCore import QUrl
+from PySide6.QtGui import QPixmap
 from component_metadata import AudioMetadata
 from component_lyrics_parser import LrcParser
 

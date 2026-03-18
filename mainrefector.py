@@ -1,6 +1,6 @@
 ﻿"""
 main.py - 飞羽播放器 (基于Qt的音乐播放器)
-依赖: PyQt6, mutagen
+依赖: PySide6, mutagen
 作者：6666
 """
 
@@ -40,7 +40,7 @@ from ui_helpers import (
 from component_widgets import ClickableSlider,VinylCover,DotMatrixLabel,SpectrumWidget,LyricDisplay  # 视觉组件：黑胶唱片、滑块、点阵信息、点阵光柱、歌词渲染
 from component_theme_manager import ThemeManager  # 主题管理器
 
-from PyQt6.QtCore import (
+from PySide6.QtCore import (
     QEvent,
     QEasingCurve,
     QPropertyAnimation,
@@ -49,9 +49,8 @@ from PyQt6.QtCore import (
     Qt,
     QTimer,
     QUrl,
-    pyqtProperty,  # type: ignore
 )
-from PyQt6.QtGui import (
+from PySide6.QtGui import (
     QAction,
     QAbstractTextDocumentLayout,
     QColor,
@@ -65,8 +64,8 @@ from PyQt6.QtGui import (
     QPixmap,
     QTextDocument,
 )
-from PyQt6.QtMultimedia import QAudioOutput, QMediaMetaData, QMediaPlayer
-from PyQt6.QtWidgets import (
+from PySide6.QtMultimedia import QAudioOutput, QMediaMetaData, QMediaPlayer
+from PySide6.QtWidgets import (
     QAbstractItemView,
     QApplication,
     QFileDialog,

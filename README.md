@@ -1,6 +1,6 @@
 # 飞羽播放器
 
-一个基于 PyQt6 的现代化音乐播放器，包含主题系统、歌词显示、点阵频谱等自定义控件，适合用于学习、演示与二次开发。有Windows,Linux,Mac版本
+一个基于 PySide6 的现代化音乐播放器，包含主题系统、歌词显示、点阵频谱等自定义控件，适合用于学习、演示与二次开发。有Windows,Linux,Mac版本
 
 ![截图](QTplayer.PNG)   
 
@@ -18,7 +18,7 @@
 ## 📦 依赖
 
 - Python 3.10+
-- PyQt6 >= 6.4.0
+- PySide6 >= 6.4.0
 - mutagen >= 1.47.0
 
 ## 🚀 安装与运行
@@ -27,7 +27,7 @@
 
 ```bash
 git clone https://github.com/Somethingtoshare/QTplay.git
-cd QTPlayer
+cd QTPlay
 ```
 
 ### 2. 安装依赖
@@ -65,7 +65,7 @@ QTPlayer/
 
 ## 开发与调试
 
-- 代码基于 PyQt6，推荐使用支持编辑 Qt UI 的 IDE（如 VS Code + Python 扩展）。
+- 代码基于 PySide6，推荐使用支持编辑 Qt UI 的 IDE（如 VS Code + Python 扩展）。
 - 修改后可直接运行 `mainrefector.py` 进行调试。
 
 ## 未来计划

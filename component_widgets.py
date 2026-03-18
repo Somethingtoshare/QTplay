@@ -6,14 +6,14 @@ import math
 import random
 import time
 
-from PyQt6.QtCore import (
+from PySide6.QtCore import (
+    Property,
     QEasingCurve,
     QPropertyAnimation,
     Qt,
     QTimer,
-    pyqtProperty,
 )
-from PyQt6.QtGui import (
+from PySide6.QtGui import (
     QColor,
     QFont,
     QLinearGradient,
@@ -23,7 +23,7 @@ from PyQt6.QtGui import (
     QTextDocument,
     QAbstractTextDocumentLayout,
 )
-from PyQt6.QtWidgets import (
+from PySide6.QtWidgets import (
     QGraphicsDropShadowEffect,
     QLabel,
     QSlider,
@@ -129,7 +129,7 @@ class VinylCover(QWidget):
         self._angle = angle
         self.update()
 
-    rotation = pyqtProperty(float, get_rotation, set_rotation)
+    rotation = Property(float, get_rotation, set_rotation)
 
     def paintEvent(self, event):
         if not self._pixmap:
@@ -237,7 +237,7 @@ class LyricDisplay(QWidget):
         self._scroll_offset = value
         self.update()
     
-    scroll_offset = pyqtProperty(float, get_scroll_offset, set_scroll_offset)
+    scroll_offset = Property(float, get_scroll_offset, set_scroll_offset)
     
     def set_lyrics(self, lyrics: list[tuple[int, str]]):
         """Set the lyrics data and reset state."""
